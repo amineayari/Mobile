@@ -5,6 +5,7 @@
  */
 package com.mycompany.entities;
 
+
 /**
  *
  * @author Abirn
@@ -16,24 +17,20 @@ public class Reclamation {
     private String description;
     private String date;
 
-    private int user_id;
-
     public Reclamation() {
     }
 
-    public Reclamation(String sujet, String description, String date, int user_id) {
+    public Reclamation(String sujet, String description, String date) {
         this.sujet = sujet;
         this.description = description;
         this.date = date;
-        this.user_id = user_id;
     }
 
-    public Reclamation(int id, String sujet, String description, String date, int user_id) {
+    public Reclamation(int id, String sujet, String description, String date) {
         this.id = id;
         this.sujet = sujet;
         this.description = description;
         this.date = date;
-        this.user_id = user_id;
     }
 
     public int getId() {
@@ -68,17 +65,10 @@ public class Reclamation {
         this.date = date;
     }
 
-    public int getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
-
     @Override
     public String toString() {
-        return "Reclamation{" + "id=" + id + ", sujet=" + sujet + ", description=" + description + ", date=" + date + ", user_id=" + user_id + '}';
+        return "Reclamation{" + "id=" + id + ", sujet=" + sujet + ", description=" + description + ", date=" + date + '}';
     }
 
+    
 }
